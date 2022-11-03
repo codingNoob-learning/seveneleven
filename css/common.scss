@@ -83,6 +83,7 @@ header {
         .menu_container {
             display: flex;
             position: absolute;
+            height: 60px;
             top: 60px;
             right: 0px;
 
@@ -107,6 +108,7 @@ header {
                     text-align: left;
                     font-size: 14px;
                     font-weight: 400;
+                    padding-left: 0px;
 
                     >li {
                         padding: 6px 0;
