@@ -1,7 +1,7 @@
 // promotion Swiper
 new Swiper('.promotion .swiper', {
     slidesPerView: 3,
-    spaceBetween: 80,
+    spaceBetween: 30,
     centeredSlides: true,
     loop: true,
     speed: 1500,

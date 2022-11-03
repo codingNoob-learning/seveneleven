@@ -76,17 +76,20 @@
   overflow: hidden;
 }
 .promotion .swiper {
-  width: 3040px;
+  width: 2940px;
   height: 700px;
   position: absolute;
   top: 40px;
   left: 50%;
-  margin-left: -1520px;
+  margin-left: -1470px;
 }
 .promotion .swiper .swiper-slide {
   opacity: 0.5;
   -webkit-transition: opacity 2s;
   transition: opacity 2s;
+}
+.promotion .swiper .swiper-slide img {
+  height: 640px;
 }
 .promotion .swiper .swiper-slide-active {
   opacity: 1;
