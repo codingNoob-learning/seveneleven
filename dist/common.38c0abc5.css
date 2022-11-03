@@ -12131,15 +12131,15 @@ header .inner {
 header .inner .logo {
   height: 32px;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
   margin: auto;
 }
 header .inner .search {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12160,8 +12160,8 @@ header .inner .search input {
 header .inner .search .material-icons {
   height: 24px;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 0px;
+  bottom: 0px;
   right: 5px;
   margin: auto;
 }
@@ -12170,8 +12170,8 @@ header .inner .menu_container {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 60px;
+  right: 0px;
 }
 header .inner .menu_container .menu {
   width: 150px;
@@ -12279,7 +12279,7 @@ footer .footer-top .recruit .recruit-menu li a {
 }
 footer .footer-top .familysite {
   position: absolute;
-  right: 0;
+  right: 0px;
 }
 footer .footer-top .familysite .left {
   width: 150px;
