@@ -66,8 +66,11 @@
 
                 .prod_name {
                     margin-top: 15px;
-                    margin-bottom: 0px;
                     text-align: center;
+
+                    p {
+                        margin-bottom: 0px;
+                    }
                 }
 
                 .prod_price {
