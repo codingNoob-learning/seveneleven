@@ -3,9 +3,15 @@
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+@mixin flexAlign() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
     color: #555;
-    font-family: Malgun Gothic, dotum, Tahoma,arial;
+    font-family: Malgun Gothic, dotum, Tahoma, arial;
 }
 
 img {
@@ -30,7 +36,7 @@ p {
 
 // header
 header {
-    width: 100%;
+    width: 100vw;
     position: relative;
     background: #fff;
     z-index: 999;
@@ -83,23 +89,35 @@ header {
         .menu_container {
             display: flex;
             position: absolute;
-            height: 60px;
             top: 60px;
             right: 0px;
 
             .menu {
                 width: 150px;
-                padding: 18px 0;
+                height: 60px;
                 text-align: center;
-                border-radius: 8px 8px 0 0;
                 font-size: 16px;
                 font-weight: bold;
                 margin-bottom: 0px;
 
-                &:hover {
-                    background: #db4149;
-                    color: #eee;
-                    cursor: pointer;
+                >li {
+                    height: 60px;
+
+                    >a {
+                        @include flexAlign;
+                        width: 150px;
+                        height: 60px;
+                    }
+    
+                    &:hover {
+                        border-radius: 8px 8px 0 0;
+                        background: #db4149;
+                        cursor: pointer;
+    
+                        a {
+                            color: #eee;
+                        }
+                    }
                 }
 
                 .menu_item {
@@ -110,7 +128,6 @@ header {
                     font-size: 14px;
                     font-weight: 400;
                     padding-left: 0px;
-                    
 
                     >li {
                         padding: 6px 0;
@@ -118,13 +135,12 @@ header {
                         background: #db4149;
                         color: #eee;
 
-                        &:hover {
-                            text-decoration: underline;
-                            cursor: pointer;
-                        }
+                        a {
+                            display: block;
 
-                        &:first-child {
-                            margin-top: 15px;
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
 
                         &:last-child {
@@ -137,11 +153,12 @@ header {
         }
     }
 }
+
 // header end
 
 // footer
 footer {
-    width: 100%;
+    width: 100vw;
     height: 220px;
     margin-top: 100px;
     background: #272727;
@@ -159,7 +176,7 @@ footer {
             display: flex;
             height: 38px;
             margin: auto 0;
-            
+
             span {
                 font-size: 12px;
                 color: #fff;
@@ -272,4 +289,5 @@ footer {
         }
     }
 }
+
 // footer end

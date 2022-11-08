@@ -11615,7 +11615,7 @@ p {
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   position: relative;
   background: #fff;
   z-index: 999;
@@ -11674,16 +11674,35 @@ header .inner .menu_container {
 }
 header .inner .menu_container .menu {
   width: 150px;
-  padding: 18px 0;
+  height: 60px;
   text-align: center;
-  border-radius: 8px 8px 0 0;
   font-size: 16px;
   font-weight: bold;
+  margin-bottom: 0px;
 }
-header .inner .menu_container .menu:hover {
+header .inner .menu_container .menu > li {
+  height: 60px;
+}
+header .inner .menu_container .menu > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 60px;
+}
+header .inner .menu_container .menu > li:hover {
+  border-radius: 8px 8px 0 0;
   background: #db4149;
-  color: #eee;
   cursor: pointer;
+}
+header .inner .menu_container .menu > li:hover a {
+  color: #eee;
 }
 header .inner .menu_container .menu .menu_item {
   width: 150px;
@@ -11692,6 +11711,7 @@ header .inner .menu_container .menu .menu_item {
   text-align: left;
   font-size: 14px;
   font-weight: 400;
+  padding-left: 0px;
 }
 header .inner .menu_container .menu .menu_item > li {
   padding: 6px 0;
@@ -11699,12 +11719,11 @@ header .inner .menu_container .menu .menu_item > li {
   background: #db4149;
   color: #eee;
 }
-header .inner .menu_container .menu .menu_item > li:hover {
-  text-decoration: underline;
-  cursor: pointer;
+header .inner .menu_container .menu .menu_item > li a {
+  display: block;
 }
-header .inner .menu_container .menu .menu_item > li:first-child {
-  margin-top: 15px;
+header .inner .menu_container .menu .menu_item > li a:hover {
+  text-decoration: underline;
 }
 header .inner .menu_container .menu .menu_item > li:last-child {
   padding-bottom: 10px;
@@ -11712,7 +11731,7 @@ header .inner .menu_container .menu .menu_item > li:last-child {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   height: 220px;
   margin-top: 100px;
   background: #272727;
