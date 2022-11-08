@@ -40,6 +40,7 @@
         ul {
             display: flex;
             flex-wrap: wrap;
+            padding-left: 0px;
 
             .prod_wrap {
                 width: 210px;
@@ -69,6 +70,7 @@
                 }
 
                 .prod_price {
+                    margin-bottom: 10px;
                     text-align: center;
 
                     p {
