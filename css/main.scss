@@ -71,12 +71,12 @@
     overflow: hidden;
 
     .swiper {
-        width: calc(960px * 3 + 60px);
+        width: calc(960px * 3 + 160px);
         height: 700px;
         position: absolute;
         top: 40px;
         left: 50%;
-        margin-left: calc((960px * 3 + 60px) / -2);
+        margin-left: calc((960px * 3 + 160px) / -2);
 
         .swiper-slide {
             opacity: .5;

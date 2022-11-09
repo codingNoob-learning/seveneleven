@@ -76,12 +76,12 @@
   overflow: hidden;
 }
 .promotion .swiper {
-  width: 2940px;
+  width: 3040px;
   height: 700px;
   position: absolute;
   top: 40px;
   left: 50%;
-  margin-left: -1470px;
+  margin-left: -1520px;
 }
 .promotion .swiper .swiper-slide {
   opacity: 0.5;
